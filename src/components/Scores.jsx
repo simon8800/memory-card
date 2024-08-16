@@ -1,5 +1,5 @@
-export default function Scores({bestScore, currentScore}) {
-  if (currentScore === 12) {
+export default function Scores({bestScore, currentScore, pokemonAmount}) {
+  if (currentScore === pokemonAmount) {
     return <Winner/>
   }
 

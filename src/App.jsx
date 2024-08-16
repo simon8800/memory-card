@@ -11,6 +11,7 @@ function App() {
   const [selectedPokemon, setSelectedPokemon] = useState([]);
   const [bestScore, setBestScore] = useState(0);
   const [currentScore, setCurrentScore] = useState(0);
+  const pokemonAmount = pokemonData.length;
 
   function handleCardClick(pokemonName) {
     if (!selectedPokemon.includes(pokemonName)) {
@@ -18,6 +19,11 @@ function App() {
       setCurrentScore(currentScore + 1)
       if (bestScore <= currentScore) setBestScore(currentScore + 1);
     } else {
+      if (currentScore === pokemonAmount) {
+        setSelectedPokemon([pokemonName])
+        setCurrentScore(1);
+        return;
+      }
       startOver();
     }
   }
@@ -42,7 +48,7 @@ function App() {
 
   return (
     <>
-      <Scores currentScore={currentScore} bestScore={bestScore}/>
+      <Scores pokemonAmount={pokemonAmount} currentScore={currentScore} bestScore={bestScore}/>
       <Board 
         pokemonData={pokemonData}
         handleCardClick={handleCardClick}
