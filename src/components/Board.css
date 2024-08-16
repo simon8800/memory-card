@@ -1,5 +1,13 @@
 .board {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .board {
+    gap: 20px;
+  }
 }
