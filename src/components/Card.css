@@ -57,3 +57,9 @@
     height: auto;
   }
 }
+
+@media(hover: hover) {
+  .card:hover {
+    background-color: slategray;
+  }
+}
