@@ -59,7 +59,7 @@
     height: auto;
   }
 
-  .card:hover, .card:active{
+  .card:active{
     background-color: slategray;
   }
 }
