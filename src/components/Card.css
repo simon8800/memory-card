@@ -1,0 +1,31 @@
+.card {
+  min-height: 150px;
+  min-width: 125px;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+.card:hover {
+  background-color: slategray;
+}
+
+.card * {
+  padding: 0;
+  margin: 0;
+}
+
+.card h1 {
+  font-size: 1rem;
+}
+
+.card-image {
+  border: 1px solid white;
+}
+
+.card img {
+  height: 50px;
+}
+
+.card ul {
+  list-style: none;
+}

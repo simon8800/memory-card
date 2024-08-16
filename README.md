@@ -17,3 +17,8 @@ User is given 12 cards and has to click each one once successively to win. If us
   - `unselectedPokemon`: Array -- tracks pokemon havent selected yet
     - `selectedPokemon`: Array -- tracks pokemon that were selected already -- derive from unselectedPokemon?
 - `useEffect` hook to get pokemon data when App component loads
+
+## Questions
+
+- How do I shuffle the cards?
+- How do I move this giant fetch somewhere else... it's making my app component look very busy
